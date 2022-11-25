@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="ProyectoSySdlL.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="29" Y="3"/>
+        <UsageCount Value="59"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="inicio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Inicio"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="14"/>
+        <CursorPos Y="34"/>
+        <UsageCount Value="59"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="pantallas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Pantallas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="38"/>
+        <CursorPos X="23" Y="116"/>
+        <UsageCount Value="59"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="analizadorsintactico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="AnalizadorSintactico"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="352"/>
+        <CursorPos X="56" Y="378"/>
+        <UsageCount Value="59"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="analizadorlexico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="AnalizadorLexico"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="203"/>
+        <CursorPos X="33" Y="217"/>
+        <UsageCount Value="59"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="evaluaciones.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Evaluaciones"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="200"/>
+        <CursorPos X="40" Y="207"/>
+        <UsageCount Value="59"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="tipos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Tipos"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="271" Y="15"/>
+        <UsageCount Value="59"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="191" TopLine="178"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="192" TopLine="178"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="193" TopLine="178"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="140" TopLine="127"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="123" TopLine="110"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="125" TopLine="110"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="115" TopLine="110"/>
+      </Position>
+      <Position>
+        <Filename Value="inicio.pas"/>
+        <Caret Line="34" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="364" Column="113" TopLine="351"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="365" TopLine="351"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="366" TopLine="351"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="367" TopLine="351"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="191" TopLine="178"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="192" TopLine="178"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="193" TopLine="178"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="140" TopLine="127"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="198" TopLine="191"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="125" TopLine="112"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="203" Column="109" TopLine="186"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="200" TopLine="186"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="213" Column="22" TopLine="197"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="222" TopLine="201"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="199" Column="119" TopLine="188"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="200" TopLine="188"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="213" TopLine="191"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="224" Column="62" TopLine="203"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="197" TopLine="191"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="212" Column="49" TopLine="200"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="200" Column="19" TopLine="198"/>
+      </Position>
+      <Position>
+        <Filename Value="evaluaciones.pas"/>
+        <Caret Line="214" Column="49" TopLine="194"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

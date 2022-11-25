@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="ProyectoSySdlL"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <Units>
+      <Unit>
+        <Filename Value="ProyectoSySdlL.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="inicio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Inicio"/>
+      </Unit>
+      <Unit>
+        <Filename Value="pantallas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Pantallas"/>
+      </Unit>
+      <Unit>
+        <Filename Value="analizadorsintactico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="AnalizadorSintactico"/>
+      </Unit>
+      <Unit>
+        <Filename Value="analizadorlexico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="AnalizadorLexico"/>
+      </Unit>
+      <Unit>
+        <Filename Value="evaluaciones.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Evaluaciones"/>
+      </Unit>
+      <Unit>
+        <Filename Value="tipos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Tipos"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="ProyectoSySdlL"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2"/>
+      </Debugging>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

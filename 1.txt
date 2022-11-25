@@ -1,0 +1,6 @@
+inicio
+var inicio chori fin;
+chori:=33;
+escribir("HOLA" ,32);
+escribir("HOLA" ,chori);
+fin
