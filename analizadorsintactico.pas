@@ -15,14 +15,13 @@ creartabla(l);
 AgregarTabla(l,'inicio',T_inicio);
 AgregarTabla(l,'fin',T_fin);
 AgregarTabla(l,'var',T_var);
+AgregarTabla(l,'sino',T_sino);
 
 AgregarTabla(l,'constante',T_const);
 AgregarTabla(l,'raiz',T_raiz);
 AgregarTabla(l,'si',T_si);
 AgregarTabla(l,'entonces',T_entonces);
-AgregarTabla(l,'sino',T_sino);
-
-
+AgregarTabla(l,'hacer',T_hacer);
 AgregarTabla(l,'leer',T_leer);
 AgregarTabla(l,'escribir',T_escribir);
 AgregarTabla(l,'mientras',T_mientras);
@@ -76,7 +75,8 @@ procedure CrearTAS(var tabla:TAS);
         InsertarValorTAS(Tabla[V_MultiSent,T_var],T_pyComa);
         InsertarValorTAS(Tabla[V_MultiSent,T_var],V_MultiSent);
 
-        Tabla[V_MultiSent,T_fin].tam:=0;     //TAS[MultiSent,fin]=epsilon
+        Tabla[V_MultiSent,T_fin].tam:=0;
+        //BIEN ACORDE A LA TAS 26/11
 
 //SENTENCIA
         InsertarValorTAS(Tabla[V_Sentencia,T_id],V_Asignacion);
@@ -90,27 +90,32 @@ procedure CrearTAS(var tabla:TAS);
         InsertarValorTAS(Tabla[V_Sentencia,T_mientras],V_VarMientras);
 
         InsertarValorTAS(Tabla[V_Sentencia,T_var],V_Variables);
+        //BIEN ACORDE A LA TAS 26/11
 
 //VARIABLES
         InsertarValorTAS(Tabla[V_Variables,T_var],T_var);
         InsertarValorTAS(Tabla[V_Variables,T_var],T_inicio);
         InsertarValorTAS(Tabla[V_Variables,T_var],V_ListaVariables);
         InsertarValorTAS(Tabla[V_Variables,T_var],T_fin);
+        //BIEN ACORDE A LA TAS 26/11
 
 
 //LISTAVARIABLES
         InsertarValorTAS(Tabla[V_ListaVariables,T_id],T_id);
         InsertarValorTAS(Tabla[V_ListaVariables,T_id],V_MultiVar);
+        //BIEN ACORDE A LA TAS 26/11
 
 //MultiVar
         InsertarValorTAS(Tabla[V_MultiVar,T_id],T_id);
         InsertarValorTAS(Tabla[V_MultiVar,T_id],V_MultiVar);
         Tabla[V_MultiVar,T_fin].tam:=0;
+        //BIEN ACORDE A LA TAS 26/11
 
 //Asignación
         InsertarValorTAS(Tabla[V_Asignacion,T_id],T_id);
         InsertarValorTAS(Tabla[V_Asignacion,T_id],T_opAsig);
         InsertarValorTAS(Tabla[V_Asignacion,T_id],V_ExpArit);
+        //BIEN ACORDE A LA TAS 26/11
 
 //Lectura
         InsertarValorTAS(Tabla[V_Lectura,T_leer],T_leer);
@@ -119,6 +124,7 @@ procedure CrearTAS(var tabla:TAS);
         InsertarValorTAS(Tabla[V_Lectura,T_leer],T_coma);
         InsertarValorTAS(Tabla[V_Lectura,T_leer],T_id);
         InsertarValorTAS(Tabla[V_Lectura,T_leer],T_parentesisCierre);
+        //BIEN ACORDE A LA TAS 26/11
 
 //Escritura
         InsertarValorTAS(Tabla[V_Escritura,T_escribir],T_escribir);
@@ -127,6 +133,7 @@ procedure CrearTAS(var tabla:TAS);
         InsertarValorTAS(Tabla[V_Escritura,T_escribir],T_coma);
         InsertarValorTAS(Tabla[V_Escritura,T_escribir],V_ExpArit);
         InsertarValorTAS(Tabla[V_Escritura,T_escribir],T_parentesisCierre);
+        //BIEN ACORDE A LA TAS 26/11
 
 //Numero
         InsertarValorTAS(Tabla[V_Numero,T_id],T_id);
@@ -136,6 +143,7 @@ procedure CrearTAS(var tabla:TAS);
         InsertarValorTAS(Tabla[V_Numero,T_const],T_const);
         InsertarValorTAS(Tabla[V_Numero,T_menos],T_menos);
         InsertarValorTAS(Tabla[V_Numero,T_menos],V_Numero);
+        //BIEN ACORDE A LA TAS 26/11
 
 //Condicion
         InsertarValorTAS(Tabla[V_Condicion,T_id],V_Parte1Cond);
@@ -149,13 +157,47 @@ procedure CrearTAS(var tabla:TAS);
 
         InsertarValorTAS(Tabla[V_Condicion,T_menos],V_Parte1Cond);
         InsertarValorTAS(Tabla[V_Condicion,T_menos],V_Disyuncion);
+        //NUEVO---------------------------------------
+        InsertarValorTAS(Tabla[V_Condicion,T_not],V_Parte1Cond);
+        InsertarValorTAS(Tabla[V_Condicion,T_not],V_Disyuncion);
 
-        Tabla[V_Condicion,T_not].tam:=0;
+        InsertarValorTAS(Tabla[V_Condicion,T_corcheteApertura],V_Parte1Cond);
+        InsertarValorTAS(Tabla[V_Condicion,T_corcheteApertura],V_Disyuncion);
+
+        InsertarValorTAS(Tabla[V_Condicion,T_raiz],V_Parte1Cond);
+        InsertarValorTAS(Tabla[V_Condicion,T_raiz],V_Disyuncion);
+        //--------------------------------------------
+        //BIEN ACORDE A LA TAS 26/11
+
+        //Tabla[V_Condicion,T_not].tam:=0;  //tenia epsilon en la casilla pero no era epsilon
 
 //Parte1Cond
         InsertarValorTAS(Tabla[V_Parte1Cond,T_not],V_Negacion);
         InsertarValorTAS(Tabla[V_Parte1Cond,T_not],V_Conjuncion);
 
+        InsertarValorTAS(Tabla[V_Parte1Cond,T_id],V_Negacion);
+        InsertarValorTAS(Tabla[V_Parte1Cond,T_id],V_Conjuncion);
+
+        InsertarValorTAS(Tabla[V_Parte1Cond,T_parentesisApertura],V_Negacion);
+        InsertarValorTAS(Tabla[V_Parte1Cond,T_parentesisApertura],V_Conjuncion);
+
+        InsertarValorTAS(Tabla[V_Parte1Cond,T_const],V_Negacion);
+        InsertarValorTAS(Tabla[V_Parte1Cond,T_const],V_Conjuncion);
+
+        InsertarValorTAS(Tabla[V_Parte1Cond,T_menos],V_Negacion);
+        InsertarValorTAS(Tabla[V_Parte1Cond,T_menos],V_Conjuncion);
+
+        InsertarValorTAS(Tabla[V_Parte1Cond,T_raiz],V_Negacion);
+        InsertarValorTAS(Tabla[V_Parte1Cond,T_raiz],V_Conjuncion);
+
+        //NUEVO--------------------------------------------------
+        InsertarValorTAS(Tabla[V_Parte1Cond,T_corcheteApertura],V_Negacion);
+        InsertarValorTAS(Tabla[V_Parte1Cond,T_corcheteApertura],V_Conjuncion);
+
+        InsertarValorTAS(Tabla[V_Parte1Cond,T_raiz],V_Negacion);
+        InsertarValorTAS(Tabla[V_Parte1Cond,T_raiz],V_Conjuncion);
+        //-------------------------------------------------------
+        //BIEN ACORDE A LA TAS 26/11
 //Negación
         InsertarValorTAS(Tabla[V_Negacion,T_id],V_CondRel);
 
@@ -165,20 +207,30 @@ procedure CrearTAS(var tabla:TAS);
 
         InsertarValorTAS(Tabla[V_Negacion,T_menos],V_CondRel);
 
+        //NUEVO--------------------------------------------------
         InsertarValorTAS(Tabla[V_Negacion,T_not],T_not);
         InsertarValorTAS(Tabla[V_Negacion,T_not],V_CondRel);
 
+        InsertarValorTAS(Tabla[V_Negacion,T_raiz],V_CondRel);
+
+        InsertarValorTAS(Tabla[V_Negacion,T_corcheteApertura],V_CondRel);
+        //-------------------------------------------------------
+        //BIEN ACORDE A LA TAS 26/11
+
 //Disyuncion
         Tabla[V_Disyuncion,T_entonces].tam:=0;
+        Tabla[V_Disyuncion,T_hacer].tam:=0;
 
         InsertarValorTAS(Tabla[V_Disyuncion,T_or],T_or);
         InsertarValorTAS(Tabla[V_Disyuncion,T_or],V_Parte1Cond);
         InsertarValorTAS(Tabla[V_Disyuncion,T_or],V_Disyuncion);
 
         Tabla[V_Disyuncion,T_corcheteCierre].tam:=0;
+        //BIEN ACORDE A LA TAS 26/11
 
 //Conjuncion
         Tabla[V_Conjuncion,T_entonces].tam:=0;
+        Tabla[V_Conjuncion,T_hacer].tam:=0;
 
         Tabla[V_Conjuncion,T_or].tam:=0;
 
@@ -187,7 +239,7 @@ procedure CrearTAS(var tabla:TAS);
         InsertarValorTAS(Tabla[V_Conjuncion,T_and],V_Conjuncion);
 
         Tabla[V_Conjuncion,T_corcheteCierre].tam:=0;
-
+        //BIEN ACORDE A LA TAS 26/11
 
 //CondRel
         InsertarValorTAS(Tabla[V_CondRel,T_id],V_ExpArit);
@@ -209,6 +261,13 @@ procedure CrearTAS(var tabla:TAS);
         InsertarValorTAS(Tabla[V_CondRel,T_corcheteApertura],T_corcheteApertura);
         InsertarValorTAS(Tabla[V_CondRel,T_corcheteApertura],V_Condicion);
         InsertarValorTAS(Tabla[V_CondRel,T_corcheteApertura],T_corcheteCierre);
+        //NUEVO--------------------------------------------------
+        InsertarValorTAS(Tabla[V_CondRel,T_raiz],V_ExpArit);
+        InsertarValorTAS(Tabla[V_CondRel,T_raiz],T_OperadorRelacional );
+        InsertarValorTAS(Tabla[V_CondRel,T_raiz],V_ExpArit);
+        //-------------------------------------------------------
+
+        //BIEN ACORDE A LA TAS 26/11
 
 //VarCondicional
         InsertarValorTAS(Tabla[V_VarCondicional,T_si],T_si);
@@ -216,16 +275,21 @@ procedure CrearTAS(var tabla:TAS);
         InsertarValorTAS(Tabla[V_VarCondicional,T_si],T_entonces);
         InsertarValorTAS(Tabla[V_VarCondicional,T_si],V_Cuerpo);
         InsertarValorTAS(Tabla[V_VarCondicional,T_si],V_SINO);
+        //BIEN ACORDE A LA TAS 26/11
 
 //SINO
         InsertarValorTAS(Tabla[V_SINO,T_sino],T_sino);
         InsertarValorTAS(Tabla[V_SINO,T_sino],V_Cuerpo);
+        //NUEVO--------------------------------------------------
+        Tabla[V_SINO,T_pyComa].tam:=0;
+        //BIEN ACORDE A LA TAS 26/11
 
 //VarMientras
         InsertarValorTAS(Tabla[V_VarMientras,T_mientras],T_mientras);
         InsertarValorTAS(Tabla[V_VarMientras,T_mientras],V_Condicion);
-        InsertarValorTAS(Tabla[V_VarMientras,T_mientras],T_entonces);
+        InsertarValorTAS(Tabla[V_VarMientras,T_mientras],T_hacer);  //cambie entonces por hacer
         InsertarValorTAS(Tabla[V_VarMientras,T_mientras],V_Cuerpo);
+        //BIEN ACORDE A LA TAS 26/11
 
 //ExpArit
         InsertarValorTAS(Tabla[V_ExpArit,T_id],V_Op1);
@@ -239,6 +303,11 @@ procedure CrearTAS(var tabla:TAS);
 
         InsertarValorTAS(Tabla[V_ExpArit,T_menos],V_Op1);
         InsertarValorTAS(Tabla[V_ExpArit,T_menos],V_SumaRes);
+        //NUEVO--------------------------------------------------
+        InsertarValorTAS(Tabla[V_ExpArit,T_raiz],V_Op1);
+        InsertarValorTAS(Tabla[V_ExpArit,T_raiz],V_SumaRes);
+        //-------------------------------------------------------
+        //BIEN ACORDE A LA TAS 26/11
 
 //Op1
         InsertarValorTAS(Tabla[V_Op1,T_id],V_RaizPot);
@@ -252,8 +321,15 @@ procedure CrearTAS(var tabla:TAS);
 
         InsertarValorTAS(Tabla[V_Op1,T_menos],V_RaizPot);
         InsertarValorTAS(Tabla[V_Op1,T_menos],V_MultDiv);
-
+        //NUEVO--------------------------------------------------
+        InsertarValorTAS(Tabla[V_Op1,T_raiz],V_RaizPot);
+        InsertarValorTAS(Tabla[V_Op1,T_raiz],V_MultDiv);
+        //-------------------------------------------------------
+        //BIEN ACORDE A LA TAS 26/11
 //SumaRes
+        //NUEVO--------------------------------------------------
+        Tabla[V_SumaRes,T_hacer].tam:=0;
+
         Tabla[V_SumaRes,T_entonces].tam:=0;
 
         Tabla[V_SumaRes,T_parentesisCierre].tam:=0;
@@ -268,23 +344,14 @@ procedure CrearTAS(var tabla:TAS);
 
         Tabla[V_SumaRes,T_corcheteCierre].tam:=0;
 
-       { Tabla[V_SumaRes,T_mayor].tam:=0;
-
-        Tabla[V_SumaRes,T_menor].tam:=0;
-
-        Tabla[V_SumaRes,T_mayorIgual].tam:=0;
-
-        Tabla[V_SumaRes,T_menorIgual].tam:=0;
-
-        Tabla[V_SumaRes,T_igual].tam:=0;
-
-        Tabla[V_SumaRes,T_distinto].tam:=0;}
-
         InsertarValorTAS(Tabla[V_SumaRes,T_mas],T_Mas);
         InsertarValorTAS(Tabla[V_SumaRes,T_mas],V_Op1);
         InsertarValorTAS(Tabla[V_SumaRes,T_mas],V_SumaRes);
 
         Tabla[V_SumaRes,T_pyComa].tam:=0;
+        //NUEVO--------------------------------------------------
+        Tabla[V_SumaRes,T_OperadorRelacional].tam:=0;
+        //BIEN ACORDE A LA TAS 26/11
 
 //RaizPot
         InsertarValorTAS(Tabla[V_RaizPot,T_id],V_Numero);
@@ -303,8 +370,12 @@ procedure CrearTAS(var tabla:TAS);
         InsertarValorTAS(Tabla[V_RaizPot,T_Raiz],T_parentesisApertura);
         InsertarValorTAS(Tabla[V_RaizPot,T_Raiz],V_RaizPot);
         InsertarValorTAS(Tabla[V_RaizPot,T_Raiz],T_parentesisCierre);
+        //BIEN ACORDE A LA TAS 26/11
 
 //Pot
+        //NUEVO--------------------------------------------------
+        Tabla[V_Pot,T_hacer].tam:=0;
+
         Tabla[V_Pot,T_entonces].tam:=0;
 
         Tabla[V_Pot,T_parentesisCierre].tam:=0;
@@ -317,18 +388,6 @@ procedure CrearTAS(var tabla:TAS);
 
         Tabla[V_Pot,T_corcheteCierre].tam:=0;
 
-        {Tabla[V_Pot,T_mayor].tam:=0;
-
-        Tabla[V_Pot,T_menor].tam:=0;
-
-        Tabla[V_Pot,T_mayorIgual].tam:=0;
-
-        Tabla[V_Pot,T_menorIgual].tam:=0;
-
-        Tabla[V_Pot,T_igual].tam:=0;
-
-        Tabla[V_Pot,T_distinto].tam:=0;   }
-
         Tabla[V_Pot,T_mas].tam:=0;
 
         InsertarValorTAS(Tabla[V_Pot,T_potencia],T_potencia);
@@ -339,9 +398,17 @@ procedure CrearTAS(var tabla:TAS);
         Tabla[V_Pot,T_multiplicacion].tam:=0;
 
         Tabla[V_Pot,T_pyComa].tam:=0;
+        //NUEVO--------------------------------------------------
+        Tabla[V_Pot,T_OperadorRelacional].tam:=0;
+        //BIEN ACORDE A LA TAS 26/11
 
 //MultDiv
+        //NUEVO--------------------------------------------------
+        Tabla[V_MultDiv,T_hacer].tam:=0;
+
         Tabla[V_MultDiv,T_entonces].tam:=0;
+
+        Tabla[V_MultDiv,T_parentesisCierre].tam:=0;
 
         Tabla[V_MultDiv,T_menos].tam:=0;
 
@@ -351,19 +418,7 @@ procedure CrearTAS(var tabla:TAS);
 
         Tabla[V_MultDiv,T_corcheteCierre].tam:=0;
 
-        Tabla[V_MultDiv,T_parentesisCierre].tam:=0;  //AGREGADO
-
-        {Tabla[V_MultDiv,T_mayor].tam:=0;
-
-        Tabla[V_MultDiv,T_menor].tam:=0;
-
-        Tabla[V_MultDiv,T_mayorIgual].tam:=0;
-
-        Tabla[V_MultDiv,T_menorIgual].tam:=0;
-
-        Tabla[V_MultDiv,T_igual].tam:=0;
-
-        Tabla[V_MultDiv,T_distinto].tam:=0;}
+        Tabla[V_MultDiv,T_mas].tam:=0;
 
         InsertarValorTAS(Tabla[V_MultDiv,T_division],T_division);
         InsertarValorTAS(Tabla[V_MultDiv,T_division],V_RaizPot);
@@ -373,9 +428,11 @@ procedure CrearTAS(var tabla:TAS);
         InsertarValorTAS(Tabla[V_MultDiv,T_multiplicacion],V_RaizPot);
         InsertarValorTAS(Tabla[V_MultDiv,T_multiplicacion],V_MultDiv);
 
-        Tabla[V_MultDiv,T_mas].tam:=0;
+        Tabla[V_MultDiv,T_pyComa].tam:=0;
 
-        Tabla[V_MultDiv,T_pyComa].tam:=0;     //Agregar
+        Tabla[V_MultDiv,T_OperadorRelacional].tam:=0;
+
+        //BIEN ACORDE A LA TAS 26/11
 
 
   end;
@@ -458,6 +515,7 @@ CrearTablaSimbolos(ts);
          if tas1[info.x,ComponenteLexico].tam=celdavacia then
            begin
            resultado:=errorsint;
+           writeln('Fila: ',info.x,' columna: ',ComponenteLexico);
            writeln('Error sintactico, desde ',info.x,' no se puede llegar a: ',ComponenteLexico);
            readkey;
            end

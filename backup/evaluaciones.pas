@@ -6,7 +6,7 @@ unit Evaluaciones;
 interface
 
 uses
-  Classes, SysUtils, Tipos, Math;
+  Classes, SysUtils, Tipos, Math, crt;
 
 const
   maxlistareal = 100;
@@ -188,7 +188,7 @@ var
   aux:real;
 begin
   EvaluarExpArit(arbol^.hijos[5],estado,aux);
-  writeln(arbol^.hijos[3]^.lexema);
+  write(arbol^.hijos[3]^.lexema);
   writeln(aux:0:2);
 end;
 
@@ -209,7 +209,7 @@ begin
 
     T_const:
     begin
-      val(arbol^.hijos[1]^.lexema,valor);
+      val(arbol^.hijos[1]^.lexema,valor);        //Val Calculate numerical/enumerated value of a string.
     end;
 
     T_menos:
@@ -250,7 +250,7 @@ begin
       EvaluarCondRel(arbol^.hijos[2],estado,resultado);
       resultado:=not resultado;
     end;
-    V_CondRel:EvaluarCondRel(arbol^.hijos[1],estado,resultado);
+    else EvaluarCondRel(arbol^.hijos[1],estado,resultado);
   end;
 end;
 
@@ -300,6 +300,8 @@ begin
     begin
       EvaluarExpArit(arbol^.hijos[1],estado,aux1);
       EvaluarExpArit(arbol^.hijos[3],estado,aux2);
+      writeln('Operador Relacional: ',arbol^.hijos[2]^.lexema, aux1=aux2);
+      readkey;
       case arbol^.hijos[2]^.lexema of
         '>':resultado:=aux1>aux2;
         '<':resultado:=aux1<aux2;

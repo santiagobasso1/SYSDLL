@@ -1,6 +1,27 @@
 inicio
-var inicio chori fin;
-chori:=33;
-escribir("HOLA" ,32);
-escribir("HOLA" ,chori);
+var inicio i n sumatoria promedio numero varianza fin;
+i:=0;
+leer("Ingrese cuantos numeros quiere ingresar: " ,n);
+
+mientras i < n hacer
+inicio
+leer("Valor: " ,numero);
+sumatoria:=sumatoria+numero;
+i:=i+1;
+fin;
+
+promedio:=sumatoria/n;
+i:=0;
+escribir("Ingrese los mismos " ,n);
+
+mientras i < n hacer
+inicio
+leer("Valor: " ,numero);
+varianza:= varianza +(numero - promedio)^2;
+i:=i+1;
+fin; 
+
+escribir("Promedio: " ,promedio);
+escribir("Varianza: " ,varianza/n);
 fin
+

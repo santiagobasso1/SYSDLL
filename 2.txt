@@ -1,0 +1,11 @@
+inicio
+var inicio i n sumatoria fin;
+leer("Valor 1: " ,i);
+leer("Valor 2: " ,n);
+mientras i<=n hacer
+inicio
+sumatoria:=sumatoria+i;
+i:=i+1;
+fin;
+escribir("Resultado de la sumatoria:" ,sumatoria);
+fin

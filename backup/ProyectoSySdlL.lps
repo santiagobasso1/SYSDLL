@@ -9,7 +9,7 @@
         <Filename Value="ProyectoSySdlL.lpr"/>
         <IsPartOfProject Value="True"/>
         <CursorPos X="29" Y="3"/>
-        <UsageCount Value="59"/>
+        <UsageCount Value="79"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -17,9 +17,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Inicio"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="14"/>
+        <TopLine Value="4"/>
         <CursorPos Y="34"/>
-        <UsageCount Value="59"/>
+        <UsageCount Value="79"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -27,30 +27,30 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Pantallas"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="38"/>
+        <TopLine Value="7"/>
         <CursorPos X="23" Y="116"/>
-        <UsageCount Value="59"/>
+        <UsageCount Value="79"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="analizadorsintactico.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="AnalizadorSintactico"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="352"/>
-        <CursorPos X="56" Y="378"/>
-        <UsageCount Value="59"/>
+        <TopLine Value="245"/>
+        <CursorPos X="55" Y="211"/>
+        <UsageCount Value="79"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="analizadorlexico.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="AnalizadorLexico"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="203"/>
-        <CursorPos X="33" Y="217"/>
-        <UsageCount Value="59"/>
+        <TopLine Value="100"/>
+        <CursorPos X="16" Y="84"/>
+        <UsageCount Value="79"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -58,9 +58,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Evaluaciones"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="200"/>
-        <CursorPos X="40" Y="207"/>
-        <UsageCount Value="59"/>
+        <TopLine Value="238"/>
+        <CursorPos X="51" Y="302"/>
+        <UsageCount Value="79"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -68,131 +68,132 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Tipos"/>
         <EditorIndex Value="4"/>
-        <CursorPos X="271" Y="15"/>
-        <UsageCount Value="59"/>
+        <TopLine Value="188"/>
+        <CursorPos Y="199"/>
+        <UsageCount Value="79"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="191" TopLine="178"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="528" TopLine="514"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="192" TopLine="178"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="529" TopLine="514"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="193" TopLine="178"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="530" TopLine="514"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="140" TopLine="127"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="525" TopLine="514"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="123" TopLine="110"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="527" TopLine="514"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="125" TopLine="110"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="528" TopLine="514"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="115" TopLine="110"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="529" TopLine="514"/>
       </Position>
       <Position>
-        <Filename Value="inicio.pas"/>
-        <Caret Line="34" TopLine="14"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="530" TopLine="514"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="364" Column="113" TopLine="351"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="525" TopLine="514"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="365" TopLine="351"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="534" TopLine="517"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="366" TopLine="351"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="535" TopLine="518"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="367" TopLine="351"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="537" TopLine="520"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="191" TopLine="178"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="538" TopLine="521"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="192" TopLine="178"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="539" TopLine="522"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="193" TopLine="178"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="540" TopLine="523"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="140" TopLine="127"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="535" TopLine="523"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="198" TopLine="191"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="537" TopLine="523"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="125" TopLine="112"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="538" TopLine="523"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="203" Column="109" TopLine="186"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="539" TopLine="523"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="200" TopLine="186"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="540" TopLine="523"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="213" Column="22" TopLine="197"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="535" TopLine="523"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="222" TopLine="201"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="494" TopLine="484"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="199" Column="119" TopLine="188"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="496" TopLine="484"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="200" TopLine="188"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="497" TopLine="484"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="213" TopLine="191"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="512" TopLine="502"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="224" Column="62" TopLine="203"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="514" TopLine="502"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="197" TopLine="191"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="524" TopLine="514"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="212" Column="49" TopLine="200"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="525" TopLine="514"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="200" Column="19" TopLine="198"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="527" TopLine="514"/>
       </Position>
       <Position>
-        <Filename Value="evaluaciones.pas"/>
-        <Caret Line="214" Column="49" TopLine="194"/>
+        <Filename Value="analizadorsintactico.pas"/>
+        <Caret Line="172" Column="45" TopLine="162"/>
       </Position>
     </JumpHistory>
     <RunParams>

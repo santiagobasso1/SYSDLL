@@ -6,7 +6,7 @@ unit Evaluaciones;
 interface
 
 uses
-  Classes, SysUtils, Tipos, Math;
+  Classes, SysUtils, Tipos, Math, crt;
 
 const
   maxlistareal = 100;
@@ -188,7 +188,7 @@ var
   aux:real;
 begin
   EvaluarExpArit(arbol^.hijos[5],estado,aux);
-  writeln(arbol^.hijos[3]^.lexema);
+  write(arbol^.hijos[3]^.lexema);
   writeln(aux:0:2);
 end;
 
@@ -250,7 +250,7 @@ begin
       EvaluarCondRel(arbol^.hijos[2],estado,resultado);
       resultado:=not resultado;
     end;
-    V_CondRel:EvaluarCondRel(arbol^.hijos[1],estado,resultado);
+    else EvaluarCondRel(arbol^.hijos[1],estado,resultado);
   end;
 end;
 

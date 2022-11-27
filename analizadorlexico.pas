@@ -137,6 +137,9 @@ Var
 end;
 
 
+
+
+
 Function EsConstCadena(Var Fuente: Archivo ; Var Control: Longint ; Var Lexema: String): Boolean;
     Const
          q0=0;
@@ -206,7 +209,7 @@ Function EssimboloEspecial(Var Fuente:archivo;Var Control:Longint; var Component
     begin
 
     leercar(fuente,control,car);
-    if car in ['=',',','(',')','[',']',';','>','<','+','-','*','/','^','&','~','|',':'] then
+    if car in ['=',',','(',')','[',']',';','>','<','+','-','*','/','^',':'] then
     begin
     essimboloespecial:=true;
     case car of
@@ -220,10 +223,7 @@ Function EssimboloEspecial(Var Fuente:archivo;Var Control:Longint; var Component
                 end;
 
           end;
-    {  '=': begin
-                 ComponenteLexico:=T_Igual;
-                 inc(control);
-                 end;  }
+
       ';':begin
             inc(control);
             lexema:=';';
@@ -242,34 +242,46 @@ Function EssimboloEspecial(Var Fuente:archivo;Var Control:Longint; var Component
                  ComponenteLexico:= T_parentesisCierre;
                  inc(control);
                  end;
-      {'>': begin inc(control);
+     '>': begin inc(control);
                 leercar(fuente,control,car);
                 if car = '=' then
                 begin
                      lexema:='>=';
-                     ComponenteLexico:=T_mayorIgual;
+                     ComponenteLexico:=T_OperadorRelacional;
                      inc(control);
                 end
                 else
                 begin
                 lexema:='>';
-                ComponenteLexico:=T_Mayor;
+                ComponenteLexico:=T_OperadorRelacional;
                 end;
-          end;  }
-     { '<': begin inc(control);
+          end;
+       '<': begin inc(control);
                 leercar(fuente,control,car);
                 if car = '=' then
                 begin
                      lexema:='<=';
-                     ComponenteLexico:=T_menorIgual;
+                     ComponenteLexico:=T_OperadorRelacional;
+                     inc(control);
+                end
+                else  if car = '>' then
+                begin
+                     lexema:='<>';
+                     ComponenteLexico:=T_OperadorRelacional;
                      inc(control);
                 end
                 else
                 begin
                 lexema:='<';
-                ComponenteLexico:=T_Menor;
+                ComponenteLexico:=T_OperadorRelacional;
                 end;
-          end; }
+          end;
+
+       '=': begin
+            lexema:='=';
+            ComponenteLexico:=T_OperadorRelacional;
+            inc(control);
+       end;
       '+': begin
                  ComponenteLexico:= T_Mas;
                  inc(control);
@@ -290,18 +302,6 @@ Function EssimboloEspecial(Var Fuente:archivo;Var Control:Longint; var Component
                  ComponenteLexico:=T_Potencia;
                  inc(control);
                  end;
-      {'&': begin
-                 ComponenteLexico:=T_AND;
-                 inc(control);
-                 end;}
-    {  '~': begin
-                 ComponenteLexico:=T_NOT;
-                 inc(control);
-                 end;   }
-    {  '|': begin
-                 ComponenteLexico:=T_OR;
-                 inc(control);
-                 end; }
       '[': begin
                  ComponenteLexico:=T_corcheteApertura;
                  inc(control);
@@ -318,6 +318,7 @@ Function EssimboloEspecial(Var Fuente:archivo;Var Control:Longint; var Component
 
 end;
 
+
 procedure ObtenerSiguienteComponenteLexico(var fuente:archivo; var control:longint; var ComponenteLexico:simbolos; var lexema:string; ts:T_Tabla);
 
     var
@@ -330,7 +331,8 @@ procedure ObtenerSiguienteComponenteLexico(var fuente:archivo; var control:longi
         inc(control);
         leercar(fuente,control,caracter);
       end;
-      if caracter=finarchivo then
+
+    if caracter=finarchivo then
       begin
         ComponenteLexico:=pesos
       end

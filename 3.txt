@@ -1,0 +1,40 @@
+inicio
+
+var inicio max min aux i n promedio productoria sumatoria fin;
+
+leer("Ingrese cuantos numeros quiere ingresar: " ,n);
+si n>0 entonces
+inicio
+leer("Ingrese un valor: " ,aux);
+max:=aux;
+min:=aux;
+sumatoria:=aux;
+productoria:=aux;
+i:=1;
+mientras i < n hacer
+inicio
+leer("Ingrese otro valor: " ,aux);
+sumatoria:=sumatoria+aux;
+productoria:=productoria*aux;
+
+si aux<min entonces
+inicio
+min:=aux;
+fin;
+
+si aux>max entonces
+inicio
+max:=aux;
+fin;
+i:=i+1;
+fin;
+promedio:=sumatoria/n;
+escribir("Suamtoria:" ,sumatoria);
+escribir("Promedio: " ,promedio);
+escribir("Productoria: " ,productoria);
+escribir("Maximo: " ,max);
+escribir("Minimo: " ,min);
+escribir("Rango: " ,max-min);
+fin sino inicio escribir("Para iniciar debes ingresar un numero mayor a " ,0); fin;
+
+fin
