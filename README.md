@@ -13,6 +13,8 @@ lenguaje con algunas palabras en español, utilizamos el “Che” porque los ar
 uruguayos tienen como costumbre decir che para referirse a alguien, el origen del termino che proviene de 
 el idioma mapuche y significa persona o gente, como dato de color la palabra mapu-che significa “gente de la tierra”. Y le pusimos
 “Pas” por el lenguaje donde lo programamos y donde nos basamos que es Pascal.
+
+Implementación de Gramatica, TAS, árboles, memoria dinamica, automatas finitos deterministicos, entre otros.
  
  ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Introduction:
@@ -30,3 +32,6 @@ language with some words in Spanish, we use “Che” because Argentines and
 Uruguayans have the habit of saying "che" to refer to someone, the origin of the term "che" comes from
 the mapuche language and means person or people, the word "mapuche" for example means "people of the earth" and we put
 "Pas" for the language where we program it and where we base it, which is Pascal (Lazarus FreePascal).
+
+Implementation of Grammar, TAS, trees, dynamic memory, finite deterministic automata, among others.
+
