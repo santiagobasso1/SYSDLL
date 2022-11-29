@@ -82,7 +82,7 @@ for i:=31 to 87 do
     gotoxy(i,20); Write('_');
     end;
 gotoxy(35,7);
-write('Basso Bentancour Haffner Wulfsohn');
+write('Basso Bentancour Dalcol Haffner Wulfsohn');
  end;
 
 

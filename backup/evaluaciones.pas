@@ -13,13 +13,6 @@ const
   maxestado = 100;
 
 type
-  {tpunterolista = ^tlistareal;
-
-  tlistareal = record
-    elementos: array [1..maxlistareal] of real;
-    cant: word;
-  end;  }
-
   telementoestado = record
     id: string;
     valor: real;
@@ -193,7 +186,7 @@ begin
 end;
 
 
-//  Numero -> id | (ExpArit) | const  | - Numero     ObtenerValor
+//  Numero -> id | (ExpArit) | const  | - Numero
 
 procedure EvaluarNumero(var arbol: T_Arbol_derivacion; var estado: T_Estado; var valor: real);
 begin
@@ -300,8 +293,6 @@ begin
     begin
       EvaluarExpArit(arbol^.hijos[1],estado,aux1);
       EvaluarExpArit(arbol^.hijos[3],estado,aux2);
-      writeln('Operador Relacional: ',arbol^.hijos[2]^.lexema, aux1=aux2);
-      readkey;
       case arbol^.hijos[2]^.lexema of
         '>':resultado:=aux1>aux2;
         '<':resultado:=aux1<aux2;
@@ -377,7 +368,7 @@ begin
   EvaluarMultDiv(arbol^.hijos[2], estado, aux, valor);
 end;
 
-//SumaRes -> + Op1 SumaRes| - Op1 SumaRes | epsilon        3 + (4/5) -7
+//SumaRes -> + Op1 SumaRes| - Op1 SumaRes | epsilon
 
 procedure EvaluarSumaRes(var arbol: T_Arbol_derivacion; var estado: T_Estado;var aux: real; var valor: real);
 var
@@ -440,7 +431,7 @@ begin
       valor := aux;
 end;
 
-//MultDiv -> * RaizPot MultDiv | / RaizPot MultDiv | epsilon                           Operando aux
+//MultDiv -> * RaizPot MultDiv | / RaizPot MultDiv | epsilon
 
 procedure EvaluarMultDiv(var arbol: T_Arbol_derivacion; var estado: T_Estado;var aux: real; var valor: real);
 var

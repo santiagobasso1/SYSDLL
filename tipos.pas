@@ -12,7 +12,7 @@ type
 
  archivo=file of char;
 
- simbolos=(T_inicio, T_fin, T_pyComa, T_var, T_id, T_opAsig, T_leer, T_parentesisApertura, T_parentesisCierre, T_Cadena, T_coma, T_escribir, T_const, T_menos, T_not, T_or, T_and, {T_menor, T_mayorIgual,}T_OperadorRelacional, {T_menorIgual, T_igual, T_distinto,} T_si, T_entonces,  T_corcheteApertura, T_corcheteCierre, T_sino, T_mientras,T_hacer, T_mas, T_raiz, T_potencia, T_multiplicacion, T_division
+ simbolos=(T_inicio, T_fin, T_pyComa, T_var, T_id, T_opAsig, T_leer, T_parentesisApertura, T_parentesisCierre, T_Cadena, T_coma, T_escribir, T_const, T_menos, T_not, T_or, T_and, T_OperadorRelacional, T_si, T_entonces,  T_corcheteApertura, T_corcheteCierre, T_sino, T_mientras,T_hacer, T_mas, T_raiz, T_potencia, T_multiplicacion, T_division
  ,pesos ,V_Cuerpo, V_MultiSent, V_Sentencia, V_Variables, V_ListaVariables, V_MultiVar, V_Asignacion, V_Lectura, V_Escritura, V_Numero, V_Condicion, V_Parte1Cond, V_Negacion, V_Disyuncion, V_Conjuncion, V_CondRel, V_VarCondicional, V_SINO, V_VarMientras, V_ExpArit, V_Op1, V_SumaRes, V_RaizPot, V_Pot, V_MultDiv, error);
 
 

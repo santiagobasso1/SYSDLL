@@ -30,7 +30,7 @@ BEGIN
    readkey;
    InicializarEstado(estado);
    clrscr;
-   EvaluarPrograma(raiz,estado);
+   EvaluarCuerpo(raiz,estado);
    readkey;
    recuadroFinal();
    readkey;

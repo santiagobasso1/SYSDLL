@@ -208,7 +208,7 @@ procedure CrearTAS(var tabla:TAS);
         InsertarValorTAS(Tabla[V_Negacion,T_menos],V_CondRel);
 
         //NUEVO--------------------------------------------------
-
+        InsertarValorTAS(Tabla[V_Negacion,T_not],T_not);
         InsertarValorTAS(Tabla[V_Negacion,T_not],V_CondRel);
 
         InsertarValorTAS(Tabla[V_Negacion,T_raiz],V_CondRel);

@@ -9,7 +9,7 @@
         <Filename Value="ProyectoSySdlL.lpr"/>
         <IsPartOfProject Value="True"/>
         <CursorPos X="29" Y="3"/>
-        <UsageCount Value="79"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -17,9 +17,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Inicio"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="4"/>
-        <CursorPos Y="34"/>
-        <UsageCount Value="79"/>
+        <TopLine Value="2"/>
+        <CursorPos X="37" Y="25"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -27,30 +27,30 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Pantallas"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="7"/>
-        <CursorPos X="23" Y="116"/>
-        <UsageCount Value="79"/>
+        <TopLine Value="90"/>
+        <CursorPos X="24" Y="85"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="analizadorsintactico.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="AnalizadorSintactico"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="245"/>
-        <CursorPos X="55" Y="211"/>
-        <UsageCount Value="79"/>
+        <TopLine Value="13"/>
+        <CursorPos X="36" Y="264"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="analizadorlexico.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="AnalizadorLexico"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="100"/>
-        <CursorPos X="16" Y="84"/>
-        <UsageCount Value="79"/>
+        <TopLine Value="257"/>
+        <CursorPos X="34" Y="263"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -58,9 +58,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Evaluaciones"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="238"/>
-        <CursorPos X="51" Y="302"/>
-        <UsageCount Value="79"/>
+        <TopLine Value="167"/>
+        <CursorPos X="29" Y="167"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -68,9 +68,8 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Tipos"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="188"/>
-        <CursorPos Y="199"/>
-        <UsageCount Value="79"/>
+        <CursorPos X="200" Y="15"/>
+        <UsageCount Value="92"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>

@@ -16,7 +16,6 @@ AgregarTabla(l,'inicio',T_inicio);
 AgregarTabla(l,'fin',T_fin);
 AgregarTabla(l,'var',T_var);
 AgregarTabla(l,'sino',T_sino);
-
 AgregarTabla(l,'constante',T_const);
 AgregarTabla(l,'raiz',T_raiz);
 AgregarTabla(l,'si',T_si);

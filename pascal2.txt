@@ -1,0 +1,25 @@
+inicio var inicio i numero resto resultado fin;
+leer("Ingrese el numero: " ,numero);
+resto:=numero;
+i:=2;
+resultado:=1;
+mientras i<numero hacer
+inicio
+    resto:=numero;
+    mientras i<=resto hacer
+    inicio
+        resto:=resto-i; 
+    fin;
+    si resto = 0 entonces
+    inicio
+        resultado:=0;
+    fin;
+    i:=i+1;
+fin;
+si resultado=1 entonces
+inicio
+escribir("Es primo : " ,numero);
+fin sino inicio escribir("No es primo " ,numero); fin;
+fin
+
+

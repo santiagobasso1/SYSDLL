@@ -1,0 +1,20 @@
+inicio
+var inicio n1 n2 n3 n4 aux sumatoria promedio numero varianza fin;
+leer("Ingrese el valor 1:" ,n1);
+leer("Ingrese el valor 2:" ,n2);
+leer("Ingrese el valor 3:" ,n3);
+leer("Ingrese el valor 4:" ,n4);
+sumatoria:=n1+n2+n3+n4;
+promedio:=sumatoria/4;
+aux:=(n1-promedio)^2;
+varianza:=varianza+aux;
+aux:=(n2-promedio)^2;
+varianza:=varianza+aux;
+aux:=(n3-promedio)^2;
+varianza:=varianza+aux;
+aux:=(n4-promedio)^2;
+varianza:=varianza+aux;
+escribir("Promedio: " ,promedio);
+escribir("Varianza: " ,varianza/4);
+fin
+

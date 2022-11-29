@@ -22,7 +22,7 @@ BEGIN
    if compilacion=false then
    begin
    clrscr;
-   writeln('Se detuvo la compilacion debido a un error en el archivo');
+   writeln('Se detuvo la compilacion');
    readkey;
    end
    else

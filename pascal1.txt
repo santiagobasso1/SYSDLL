@@ -1,0 +1,9 @@
+inicio var inicio a b c d x resultado fin;
+leer("Ingrese el valor de a: " ,a);
+leer("Ingrese el valor de b: " ,b);
+leer("Ingrese el valor de c: " ,c);
+leer("Ingrese el valor de d: " ,d);
+leer("Ingrese el valor de x: " ,x);
+resultado:=(a*x^3)+(b*x^2)+(c*x)+d;
+escribir("Resultado:" ,resultado);
+fin

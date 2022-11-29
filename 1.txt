@@ -17,7 +17,7 @@ escribir("Ingrese los mismos " ,n);
 mientras i < n hacer
 inicio
 leer("Valor: " ,numero);
-varianza:= varianza +(numero - promedio)^2;
+varianza:= varianza + (numero - promedio)^2;
 i:=i+1;
 fin; 
 
